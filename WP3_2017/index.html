@@ -1,0 +1,1035 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Workshop on Pioneering Processor Paradigms</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bower_components/ionicons/css/ionicons.min.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body data-spy="scroll" data-target="#site-nav">
+    <nav id="site-nav" class="navbar navbar-fixed-top navbar-custom">
+        <div class="container">
+            <div class="navbar-header">
+
+                <!-- logo -->
+                <div class="site-branding">
+                    <a class="logo" href="index.html">
+                        
+                        <!-- logo image  -->
+                        <!-- <img src="assets/images/logo.png" alt="Logo"> -->
+                        WP<sup>3</sup>
+                    </a>
+                </div>
+
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-items" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+            </div><!-- /.navbar-header -->
+
+            <div class="collapse navbar-collapse" id="navbar-items">
+                <ul class="nav navbar-nav navbar-right">
+
+                    <!-- navigation menu -->
+                    <li class="active"><a data-scroll href="#about">About</a></li>
+                    <li><a data-scroll href="#cfc">Call for Contributions</a></li>              
+                    <li><a data-scroll href="#submission">Submissions</a></li>
+                    <li><a data-scroll href="#program">Program</a></li>                  
+                    <li><a data-scroll href="#org">Organizers</a></li>                  
+                    <!-- <li><a data-scroll href="#">Sponsorship</a></li> -->
+                    <!-- <li><a data-scroll href="#faq">FAQ</a></li> -->
+                
+                </ul>
+            </div>
+        </div><!-- /.container -->
+    </nav>
+
+    <header id="site-header" class="site-header valign-center"> 
+        <div class="intro">
+
+            <h2>4 February, 2017 / Austin, TX, USA</h2>
+            
+            <h1>First Workshop on Pioneering Processor Paradigms</h1>
+            
+            <p>In conjunction with the 23rd IEEE Symposium on High Performance Computer Architecture</p>
+            
+            <a class="btn btn-white" data-scroll href="#submission">Contribute Now</a>
+
+            <a class="btn btn-white" data-scroll href="#registration">Register Now</a>
+        
+        </div>
+    </header>
+
+    <section id="about" class="section about">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+
+                    <h3 class="section-title">Introduction</h3>
+
+                    <p> Innovations in instruction set architecture (ISA), processor microarchitecture and supportive advances in
+                    circuit design, compilers, semiconductor technology, pre-silicon specification,
+                    modeling and validation have all been essential elements of the computer
+                    systems revolution that has transformed human society so dramatically over the
+                    last six decades or more. In the late CMOS era, with power and reliability
+                    walls already causing major paradigm shifts, the need for new innovations in
+                    cross-layer, hardware-software design and modeling are being called for to help
+                    keep the IT industry moving and growing at historical rates. </p> 
+                    
+                    <p>  In trying to forge
+                    a path of innovation, it is sometimes worth examining the past to look for
+                    major paradigm shifts in (micro)-architecture, circuits, modeling and software
+                    that helped us keep going in the face of past technology-driven disruption
+                    points. With this in mind, we present a new workshop <i>pioneering processor paradigms (P<sup>3</sup>)</i>.
+                    With the help of true pioneers as well as budding new researchers, P<sup>3</sup> will take
+                    a retrospective look at how past technological hurdles were circumvented
+                    through major innovations. The goal is to learn from the past in devising
+                    new solution strategies for the future.</p>
+                    
+                    <p> The P<sup>3</sup> workshop will offer a 
+                    number of invited talks from true pioneers as well as reviewed
+                    selections from the new generation of researchers and teachers who are eager to take a
+                    retrospective look into surveying past pioneering work that can teach us a lesson
+                    about solution strategies of the future. </p>
+
+				    <h4 class="section-title">Important dates</h4>	
+                      
+                    <p>
+					<ul class="list-arrow-right">
+                        <li>Submission deadline: <strike>November 27</strike> December 4, 2016</li>
+						<li>Notification of acceptance: December 18, 2016</li>
+						<li>Final paper submission: January 8, 2017</li>
+						<li>Workshop date: February 4, 2017</li>
+					</ul>
+                    </p>
+
+                    <h4 class="section-title">Program Committee</h4>	
+
+                    <p>
+					<ul class="list-arrow-right">
+                        <li>Lluc Alvarez, Barcelona Supercomputing Center</li>
+                        <li>Ramon Bertran, IBM Research</li>
+                        <li>Pradip Bose, IBM Research</li>
+                        <li>Jose Cano Reyes, University of Edinburgh</li>
+                        <li>Robert Montoye, IBM Research</li>
+                        <li>Govind Sreekar Shenoy, University of Edinburgh</li>
+                        <li>John-David Wellman, IBM Research</li>
+					</ul>
+                    </p>
+
+
+                    <!--  <figure>
+                        <img alt="" class="img-responsive" src="assets/images/about-us.jpg">
+                    </figure> -->
+
+                </div><!-- /.col-sm-6 -->
+
+                <div class="col-sm-6">
+
+                    <h3 class="section-title multiple-title">Motivation</h3>
+
+                        <p> The design and development of computer processors as an industry has a 
+                        relatively shorter history than many other industries, but over those ~60 years 
+                        there have been a number of major disruptive, transformational developments and 
+                        changes in the technologies, methodologies, architectures, implementations, 
+                        design processes, and even goals.  The processor design community has always 
+                        been highly focused on the future, on pushing technology and implementations 
+                        forward into new areas, exploiting new approaches and ideas, and generally 
+                        progressing forward.  We feel, however, that it is important at times to look 
+                        back at the history, to study what has come before, and to glean new insights 
+                        to use in the pursuit of the future.</p>
+
+                                                  
+                        <p> We now find ourselves in the late CMOS silicon era, where the CMOS technology
+                        is growing ever closer to fundamental physical limits, and there are clearly visible
+                        constraints on (and increasing pressures to) the chip area and power.  As designs 
+                        are pushing ever forward in CMOS, additional pressures appear to limit the 
+                        effectiveness of time-tested techniques (e.g. reliability issues limit the ability 
+                        to further reduce voltage and current points in devices, cross-talk limits how 
+                        physically close devices can be laid out, etc.).  Additionally, the performance 
+                        uplift from each technology generation is less than in the prior generations, 
+                        with no clear end to this trend in sight.  In essence, the challenges of future 
+                        processor design appear to be growing.</p>
+
+                                                
+                        <p> The Workshop on Pioneering Processor Paradigms intends to reflect upon
+                        important transition points of our shared historic past, and to learn 
+                        from these historic inflection points lessons that can improve our 
+                        insights into the present and future of processor design.  As one reflects on the 
+                        current state of technology and processor design, and in consideration of the 
+                        history of computer processor research and design, one can find similar points 
+                        in the past when a shift in paradigm was required in order to go forward.</p>
+
+                                                
+                        <p> Innovations in instruction set architecture (ISA), processor microarchitecture and supportive advances in
+                        circuit design, compilers, semiconductor technology, pre-silicon specification,
+                        modeling and validation have all been essential elements of the computer
+                        systems revolution that has transformed human society so dramatically over the
+                        last six decades or more. In trying to forge
+                        a path of innovation, it is sometimes worth examining the past to look for
+                        major paradigm shifts in (micro)-architecture, circuits, modeling and software
+                        that helped us keep going in the face of past technology-driven disruption
+                        points. Processor design has faced a number of prior cases where technology "ran into a wall" -- 
+                        consider the transition from discrete to integrated circuits, and later from bipolar technologies to CMOS. 
+                        In the late CMOS era, with power and reliability
+                        walls already causing major paradigm shifts, the need for new innovations in
+                        cross-layer, hardware-software design and modeling are being called for to help
+                        keep the IT industry moving and growing at historical rates. </p>
+
+                        
+                        <p> With the help of true pioneers as well as budding new researchers, -- the Workshop on Pioneering Processor Paradigms -- will take
+                        a retrospective look at how past technological hurdles were circumvented
+                        through major innovations.  The goal here is to take lessons from the past and apply them to the present in order to devise
+                        new solution strategies for the future of our industry.</p>
+
+                    <!--
+                    <ul class="list-arrow-right">
+
+                        <li>Learn from the best Asian Social Media Experts &amp; Case Studies</li>
+                        <li>Have dedicated 2-to-1 meetings with the experts</li>
+                        <li>Reach more consumers for less by learning new digital media skills</li>
+                        <li>Save money when spending in online advertising</li>
+                    
+                    </ul>
+                    -->
+
+                </div><!-- /.col-sm-6 -->
+            </div><!-- /.row -->
+        </div><!-- /.container -->
+    </section>
+
+    <section id="important" class="section bg-image-1 facts text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3">
+
+                    <i class="ion-ios-calendar"></i>
+                    <h3>Submission Deadline<br><strike>November 27</strike><br>December 4, 2016</h3>
+                
+                </div>
+                <div class="col-sm-3">
+
+                    <i class="ion-ios-calendar"></i>
+                    <h3>Notification of acceptance<br>December 18, 2016</h3>
+                
+                </div>
+                <div class="col-sm-3">
+
+                    <i class="ion-ios-calendar"></i>
+                    <h3>Final paper submission<br>January 8, 2017</h3>
+                
+                </div>
+                <div class="col-sm-3">
+                
+                    <i class="ion-ios-calendar"></i>
+                    <h3>Workshop date<br>February 4, 2017</h3>
+                
+                </div>
+            </div><!-- row -->
+        </div><!-- container -->
+    </section>
+
+    <!--
+
+    <section id="speakers" class="section speakers">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+
+                    <h3 class="section-title">Speakers</h3>
+                
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="speaker">
+
+                        <figure>
+                            <img alt="" class="img-responsive center-block" src="assets/images/speakers/speaker-1.jpg">
+                        </figure>
+
+                        <h4>Jhon Smith</h4>
+
+                        <p>CEO of Peren</p>
+
+                        <ul class="social-block">
+                            <li><a href=""><i class="ion-social-twitter"></i></a></li>
+                            <li><a href=""><i class="ion-social-facebook"></i></a></li>
+                            <li><a href=""><i class="ion-social-linkedin-outline"></i></a></li>
+                            <li><a href=""><i class="ion-social-googleplus"></i></a></li>
+                        </ul>
+
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="speaker">
+
+                        <figure>
+                            <img alt="" class="img-responsive center-block" src="assets/images/speakers/speaker-2.jpg">
+                        </figure>
+
+                        <h4>Jhon Smith</h4>
+
+                        <p>CEO of Peren</p>
+
+                        <ul class="social-block">
+                            <li><a href=""><i class="ion-social-twitter"></i></a></li>
+                            <li><a href=""><i class="ion-social-facebook"></i></a></li>
+                            <li><a href=""><i class="ion-social-linkedin-outline"></i></a></li>
+                            <li><a href=""><i class="ion-social-googleplus"></i></a></li>
+                        </ul>
+
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="speaker">
+
+                        <figure>
+                            <img alt="" class="img-responsive center-block" src="assets/images/speakers/speaker-3.jpg">
+                        </figure>
+
+                        <h4>Jhon Smith</h4>
+
+                        <p>CEO of Peren</p>
+
+                        <ul class="social-block">
+                            <li><a href=""><i class="ion-social-twitter"></i></a></li>
+                            <li><a href=""><i class="ion-social-facebook"></i></a></li>
+                            <li><a href=""><i class="ion-social-linkedin-outline"></i></a></li>
+                            <li><a href=""><i class="ion-social-googleplus"></i></a></li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4">
+
+                    <div class="speaker">
+
+                        <figure>
+                            <img alt="" class="img-responsive center-block" src="assets/images/speakers/speaker-4.jpg">
+                        </figure>
+
+                        <h4>Jhon Smith</h4>
+
+                        <p>CEO of Peren</p>
+
+                        <ul class="social-block">
+                            <li><a href=""><i class="ion-social-twitter"></i></a></li>
+                            <li><a href=""><i class="ion-social-facebook"></i></a></li>
+                            <li><a href=""><i class="ion-social-linkedin-outline"></i></a></li>
+                            <li><a href=""><i class="ion-social-googleplus"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4">
+
+                    <div class="speaker">
+
+                        <figure>
+                            <img alt="" class="img-responsive center-block" src="assets/images/speakers/speaker-5.jpg">
+                        </figure>
+
+                        <h4>Jhon Smith</h4>
+
+                        <p>CEO of Peren</p>
+
+                        <ul class="social-block">
+                            <li><a href=""><i class="ion-social-twitter"></i></a></li>
+                            <li><a href=""><i class="ion-social-facebook"></i></a></li>
+                            <li><a href=""><i class="ion-social-linkedin-outline"></i></a></li>
+                            <li><a href=""><i class="ion-social-googleplus"></i></a></li>
+                        </ul>
+
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="speaker">
+                        <figure>
+                            <img alt="" class="img-responsive center-block" src="assets/images/speakers/speaker-6.jpg">
+                        </figure>
+                        <h4>Jhon Smith</h4>
+                        <p>CEO of Peren</p>
+                        <ul class="social-block">
+                            <li><a href=""><i class="ion-social-twitter"></i></a></li>
+                            <li><a href=""><i class="ion-social-facebook"></i></a></li>
+                            <li><a href=""><i class="ion-social-linkedin-outline"></i></a></li>
+                            <li><a href=""><i class="ion-social-googleplus"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    -->
+
+
+    <section id="cfc" class="section cfc">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h3 class="section-title">Call for Contributions</h3>
+
+                    <p>
+                    The workshop on pioneering processor paradigms invites survey (or tutorial)-like submissions for review. 
+                    The ideal paper would highlight a single pioneering paper (or set of papers) constituting a major 
+                    processing, design, modeling or software paradigm shift in the past. In addition to explaining the
+                    context and basic concepts articulated in such work, the author(s) should draw relevant conclusions 
+                    about how this pioneering work could or should influence computing paradigms of the future. 
+                    </p>
+
+                    <p><i>Note: Ph.D dissertation research topic proposals from (junior graduate students) that contain a 
+                    survey of a key paper or two to build up the motivational justification of the proposal are 
+                    quite welcome, for example.</i></p> 
+
+                </div>
+
+                <div class="col-md-8">
+                    <h4 class="section-title">Topics</h4>
+                    <p>
+                    Example topic areas include (but are not limited to):
+                    </p>
+
+
+                       <ul class="list-arrow-right">
+
+<li>Processing and cache taxonomy papers.</li>
+<li>RISC architectures and CISC-to-RISC dynamic translation support.</li>
+<li>Processor pipelining, super scalar processing and branch prediction innovations.</li>
+<li>Register renaming, out-of-order execution and precise interruption.</li>
+<li>Cycle-accurate processor performance modeling.</li>
+<li>Innovations in floating point arithmetic units and vector/SIMD acceleration.</li>
+<li>VLIW architectures.</li>
+<li>Multi-threading, multiscalar and speculative multi-threading.</li>
+<li>Homogeneous and heterogeneous multi-core processors; accelerator-enabled efficiency boost.</li>
+<li>Power, temperature, and reliability-aware computing – with associated modeling innovations.</li>
+<li>Compiler innovations in support of novel microarchitectural paradigms.</li>
+<li>Circuit design innovations in support of (micro)-architectural paradigm shifts.    </li>
+
+
+                </div>
+
+
+
+            </div>
+    </section>
+
+    <section id="submission" class="section bg-image-2 contribution">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3 class="text-uppercase mt0 font-400">Submit Your Contribution</h3>
+                    
+					<b>
+                    <p> Papers reporting original research results pertaining to the mentioned and related topics are solicited. 
+                    Full paper manuscripts must be in English of up to 6 pages (using the IEEE two-column format).</p> 
+					
+					<p><a class="btn btn-white" href="http://www.ieee.org/conferences_events/conferences/publishing/templates.html"> Format Template </a></p>
+				
+                    <p>The online submission site is EasyChair. If web submission is not possible, please contact the 
+                    program co-chairs for alternate arrangements.</p>
+
+                    <p><a class="btn btn-white" href="https://easychair.org/conferences/?conf=wp3">Submit</a> </p>
+
+                    <p>If you have questions regarding submission, contact us</p>
+                    
+					<p><a class="btn btn-white" href="#contact">Contact</a> </p>
+
+					</b>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="program" class="section schedule">
+
+        <div class="container">
+	
+	   <div class="row">
+                <div class="col-md-12">
+                    <h3 class="section-title">Program</h3>
+			<p><b>Location: Hilton Austin, Room 415B</b></p>
+			<p><a class="btn btn-black" href="./WP3_Advance_Program.pdf"> Download Program (pdf format) </a></p>
+		    <ul>
+			    <li>7:30 AM – 8:30 AM (room: 616AB): Breakfast (provided by the conference)</li>
+			    <li>8:30 AM – 8:40 AM: Welcome and Introduction <i>Pradip Bose; on behalf of the workshop co-organizers: (Ramon Bertran, Pradip Bose, Robert Montoye, John-David Wellman)</i></li>
+			    <li>8:40 AM – 9:40 AM: Keynote – I:  <i>Prof. Yale N. Patt, Ernest Cockrell, Jr. Centennial Chair in Engineering University of Texas at Austin</i>
+				<ul><li>Talk Title: Processor Paradigms: Evolution or Disruption?</li></ul>
+			    </li>
+			    <li>9:40 AM – 10:00 AM: Stacked Memory Architectures
+				<ul><li>Towards a memory-centric, stacked architecture for extreme-scale, data intensive computing: John Leidel, Xi Wang and Yong Chen, Texas-Tech University.
+                <br>
+                <a href="./pdfs/WP3_leidel.pdf">Paper <img src=./pdf.gif></img></a>    
+                <a href="./pdfs/WP3_leidel_presentation.pdf">Presentation <img src=./pdf.gif></img></a>     
+                </li></ul>
+			    </li>
+			    <li>10:00 AM – 10:15 AM (room: 616AB): Coffee/Tea Break</li>
+			    <li>10:15 AM – 10:40 AM: Reconfigurable and Power-Efficient Architectures
+				<ul>
+				<li>Two-level controlled parallel reconfigurable architectures: Takanobu Baba, Kanemitsu Ootsu, Utsonomiya University
+                <br>
+                <a href="./pdfs/WP3_baba.pdf">Paper <img src=./pdf.gif></img></a>    
+                <a href="./pdfs/WP3_baba_presentation.pdf">Presentation <img src=./pdf.gif></img></a>     
+                </li>
+				<li>A survey of low-power NoC design techniques: Emmanuel Ofori-Attah and Michael Opoku Agyeman, University of Northhampton (5 minute summary: remote presentation, via skype or just telephone tie-in)  
+                <br>
+                <a href="./pdfs/WP3_ofori.pdf">Paper <img src=./pdf.gif></img></a>    
+                <a href="./pdfs/WP3_ofori_presentation.pdf">Presentation <img src=./pdf.gif></img></a>     
+                </li>
+				</ul>
+			    </li>
+                <li>10:40 AM – 11:20 AM: Statistical Methods in Computing
+				<ul>
+				<li>Time-randomized processors for secure and reliable high-performance computing: David Trilla, Carles Hernandez, Jaume Abella, Francisco Javier Cazorla, UPC and Barcelona Supercomputing Center, Barcelona
+                <br>
+                <a href="./pdfs/WP3_trilla.pdf">Paper <img src=./pdf.gif></img></a>    
+                <a href="./pdfs/WP3_trilla_presentation.pdf">Presentation <img src=./pdf.gif></img></a>     
+                </li>
+				<li>End-to-end stochastic computing: Carly Schulz, Mikko Lipasti, University of Wisconsin – Madison
+                <br>
+                <a href="./pdfs/WP3_lipasti.pdf">Paper <img src=./pdf.gif></img></a>    
+                <a href="./pdfs/WP3_lipasti_presentation.pdf">Presentation <img src=./pdf.gif></img></a>     
+                </li>
+				</ul>	
+                <li>11:20 AM – 12:00 Noon: Retrospective Survey-I
+				<ul>
+				<li>Efficient floating point unit design - a historical perspective: Robert Montoye, IBM T. J. Watson Research Center</li>
+				</ul>	
+			    </li>	
+			    <li>12:00 Noon – 1:15 PM: LUNCH (self)</li>
+                <li>1:15 PM – 2:15 PM: Keynote-II: Prof. Jacob A. Abraham, Cockrell Family Regents Chair in Engineering, University of Texas at Austin
+				<ul><li>Talk Title: Pioneering Paradigms in Systems Resilience</li></ul>
+			    </li>
+		        <li>2:15 PM – 3:15 PM: Panel Session: 
+				<ul>
+				<li>Notable Pioneering (Research) Paradigms (that should have made it into real design, but didn’t yet, or did make it in the end after lots of tweaks)
+				<br>Panelists: Prof. Yale Patt, Prof. Jacob Abraham, Prof. Mikko Lipasti
+				<br>Moderator: one of the workshop organizers</li>
+				</ul>
+			    </li>
+			    <li>3:15 PM – 3:30 PM (room: 616AB): Coffee/Tea Break</li>
+   			    <li>3:30 PM – 4:15 PM: Retrospective Survey-II
+			    <ul>
+				<li>Cycle-accurate simulation advances in support of efficient & resilient design: John-David Wellman (with Ramon Bertran and Pradip Bose), IBM T. J. Watson Research Center</li>
+			    </ul>
+			    </li>
+                <li>4:15 PM – 5:00 PM: Recap/discussion; action items
+			    <ul>
+                <li>Discussion driven by JD Wellman, Ramon Bertran and Robert Montoye
+                <ul>
+                <li>Can/should we try a special issue of IEEE Computer (or ACM Communications) to cover selected articles that cover the theme of this workshop?</li>
+                <li>Should we offer WP3 again in the future? At ISCA or MICRO? How can we improve the quality and the end utility?</li>
+                </ul>
+                </li>
+			    </ul>
+			    </li>
+	            </ul>
+                </div>
+            </div>
+		<p></p>
+            <div class="row">
+                <div class="col-md-12">
+                    <h3 class="section-title">Invited pioneers</h3>
+                    <p>Please find below the list of the long talks to be given by pioneers and experienced researchers.</p>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-md-6 col-sm-6">
+                    <div class="schedule-box">
+                        
+                        <div class="time">
+                            <time datetime="8:40">08:40 am</time> - <time datetime="09:40">09:40 am</time>
+                        </div>
+                        
+                        <h3>Yale N. Patt</h3>
+                        <p>Talk: Processor Paradigms: Evolution or Disruption?</p>
+                    </div>
+                </div>
+		    <p></p>
+                <div class="col-md-6 col-sm-6">
+                    <div class="schedule-box">
+                        
+                        <div class="time">
+                            <time datetime="01:15">01:15 pm</time> - <time datetime="02:15">02:15 pm</time>
+                        </div>
+                        
+                        <h3>Jacob Abraham</h3>
+                        <p>Talk: Pioneering Paradigms in Systems Resilience</p>
+                    </div>
+                </div>
+            </div>
+            <p></p>
+            <div class="row">
+                
+		<div class="col-md-6 col-sm-6">
+                    <div class="schedule-box">
+                        
+                        <div class="time">
+                            <time datetime="10:00">03:30 pm</time> - <time datetime="22:00">04:15 pm</time>
+                        </div>
+                        
+                        <h3>Cycle-accurate simulation advances in support of efficient & resilient design</h3>
+                        <p><b>John-David Wellman (with Ramon Bertran and Pradip Bose)</b><br>IBM Research</p>
+                    </div>
+                </div>
+		    <p></p>
+		<div class="col-md-6 col-sm-6">
+                    <div class="schedule-box">
+                        
+                        <div class="time">
+                            <time datetime="10:00">11:20 am</time> - <time datetime="22:00">12:00 Noon</time>
+                        </div>
+                        
+                        <h3>Efficient Floating Point Unit Design: A Historical Perspective</h3>
+                        <p><b>Robert (Bob) Montoye</b><br>IBM Research</p>
+                    </div>
+                </div>
+                
+            </div>
+			<p></p>
+	<div class="row">
+                <div class="col-md-12">
+                    <h3 class="section-title">Technical Talks</h3>
+                    <p>Please find below the list of short technical presentations</p>
+                </div>
+            </div>
+	
+	   <div class="row">
+                <div class="col-md-3 col-sm-6"></div>
+                <div class="col-md-6 col-sm-6">
+                    <div class="schedule-box">
+                        
+                        <div class="time">
+                            <time datetime="10:00">09:40 am</time> - <time datetime="22:00">10:00 am</time>
+                        </div>
+                        
+                        <h3>Toward a Memory-Centric, Stacked Architecture for Extreme-Scale, Data-Intensive Computing</h3>
+                        <p><b>John Leidel, Xi Wang and Yong Chen</b><br>Texas Tech University</p>
+                    </div>
+                </div>
+            </div>
+		            <p></p>
+
+            <div class="row">
+                <div class="col-md-6 col-sm-6">
+                    <div class="schedule-box">
+                        
+                        <div class="time">
+                            <time datetime="10:00">10:15 am</time> - <time datetime="22:00">10:35 am</time>
+                        </div>
+                        <h3>Two-Level Controlled Parallel Reconfigurable Architecture</h3>
+                        <p><b>Takanobu Baba and Kanemitsu Ootsu</b><br>Utsunomiya University</p>
+                        
+                    </div>
+			<p></p>
+			<div class="schedule-box">
+                        
+                        <div class="time">
+                            <time datetime="??:??">10:35 am</time> - <time datetime="22:00">10:40 am</time>
+                        </div>
+                        <h3>A Survey of Low Power NoC Design Techniques<br>(5 min. remote presentation)</h3>
+                        <p><b>Emmanuel Ofori-Attah and Michael Opoku Agyeman</b><br>The University of Northampton<br><br></p>
+                        
+                    </div>
+                </div>
+		    
+		                <p></p>
+
+		    
+                <div class="col-md-6 col-sm-6">
+			
+		    <div class="schedule-box">
+                        
+                        <div class="time">
+                            <time datetime="10:00">10:40 am</time> - <time datetime="22:00">11:00 am</time>
+                        </div>
+                        <h3>Time-Randomized Processors for Secure and Reliable High-Performance Computing</h3>
+                        <p><b>David Trilla, Carles Hernandez, Jaume Abella and Francisco Javier Cazorla</b><br>Universtitat Politècnica de Catalunya and Barcelona Supercomputing Center </p>
+                        
+                        
+                    </div>
+			<p></p>
+                    <div class="schedule-box">
+                        
+                        <div class="time">
+                            <time datetime="10:00">11:00 am</time> - <time datetime="22:00">11:20 am</time>
+                        </div>
+                        
+
+                        <h3>End-to-end Stochastic Computing</h3>
+                        <p><b>Carly Schulz and Mikko Lipasti</b><br>University of Wisconsin-Madison<br><br></p>
+                    </div>
+                </div>
+            </div>
+            <p></p>
+           
+    </section>
+
+    <!--
+    <section id="partner" class="section partner">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3 class="section-title">Event Partner</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-3">
+                    <a class="partner-box partner-box-1"></a>
+                </div>
+                <div class="col-sm-3">
+                    <a class="partner-box partner-box-2"></a>
+                </div>
+                <div class="col-sm-3">
+                    <a class="partner-box partner-box-3"></a>
+                </div>
+                <div class="col-sm-3">
+                    <a class="partner-box partner-box-4"></a>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-3">
+                    <a class="partner-box partner-box-5"></a>
+                </div>
+                <div class="col-sm-3">
+                    <a class="partner-box partner-box-6"></a>
+                </div>
+                <div class="col-sm-3">
+                    <a class="partner-box partner-box-7"></a>
+                </div>
+                <div class="col-sm-3">
+                    <a class="partner-box partner-box-8"></a>
+                </div>
+            </div>   
+    </section>
+    -->
+
+    <!--
+
+    <section id="faq" class="section faq">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3 class="section-title">Event FAQs</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                        
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingOne">
+                                <h4 class="panel-title">
+                                    <a class="faq-toggle collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne"> What is the price of the ticket ?</a>
+                                </h4>
+                            </div>
+
+                            <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                                <div class="panel-body">
+                                    <h3>Hello</h3>
+                                    <p>Lorem Ipsum</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingTwo">
+                                <h4 class="panel-title">
+                                    <a class="faq-toggle collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"> What is included in my ticket ?</a>
+                                </h4>
+                            </div>
+
+                            <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                <div class="panel-body">Hello</div>
+                            </div>
+                        </div>
+  
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingThree">
+                                <h4 class="panel-title">
+                                    <a class="faq-toggle collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree"> Office address ?</a>
+                                </h4>
+                            </div>
+
+                            <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                                <div class="panel-body">Hello</div>
+                            </div>
+                        </div>
+
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingFour">
+                                <h4 class="panel-title">
+                                    <a class="faq-toggle collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour"> How should I dress ?</a>
+                                </h4>
+                            </div>
+
+                            <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+                                <div class="panel-body">Hello</div>
+                            </div>
+                        </div>
+
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingFive">
+                                <h4 class="panel-title">
+                                    <a class="faq-toggle collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive"> I have specific questions that are not addressed here. Who can help me ?</a>
+                                </h4>
+                            </div>
+
+                            <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+                                <div class="panel-body">Hello</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    -->
+
+    <section id="facts" class="section bg-image-1 facts text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+
+                    <i class="ion-ios-calendar"></i>
+                    <h3>2017<br>February 4</h3>
+                
+                </div>
+                <div class="col-sm-6">
+
+                    <i class="ion-ios-location"></i>
+                    <h3>Austin, TX<br>USA</h3>
+                
+                </div>
+
+				<!--
+                <div class="col-sm-3">
+
+                    <i class="ion-pricetags"></i>
+                    <h3>50<br>Tickets</h3>
+                
+                </div>
+                <div class="col-sm-3">
+                
+                    <i class="ion-speakerphone"></i>
+                    <h3>TBD<br>Speakers</h3>
+                
+                </div>
+				-->
+            </div><!-- row -->
+        </div><!-- container -->
+    </section>
+
+
+
+    <section id="org" class="section registration">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3 class="section-title">Organizers</h3>
+                </div>
+                <div class="col-md-4">
+<p><b><a href="http://researcher.watson.ibm.com/researcher/view.php?person=us-wellman" rel="nofollow">John-David Wellman</a> </b> is a
+research staff member at IBM T. J. Watson Research Center. He has over 20
+years’ of experience at IBM in pre-silicon performance modeling. At present he is
+a key member of the future z Systems (mainframe) processor microarchitecture
+concept definition team. He holds a Ph.D from University of Michigan, Ann
+Arbor.
+</p><p>
+<b><a href="https://www.linkedin.com/in/robert-montoye-212910" rel="nofollow">Robert Montoye</a> </b>is a
+research staff member at IBM T. J. Watson Research Center. He made pioneering
+contributions to the industry-first RS/6000 (POWER-1) processor and system –
+specifically in terms of its floating point engine. He has over 30 years of
+experience at IBM. He holds a Ph.D from University of Illinois at
+Urbana-Champaign. 
+</p>
+                </div>
+                <div class="col-md-4">
+<p>
+<b><a href="http://researcher.watson.ibm.com/researcher/view.php?person=us-rbertra" rel="nofollow">Ramon Bertran</a> </b> is a research staff member at 
+IBM T. J. Watson Research Center. He has worked in power and performance analysis, reliability, and tools and methodology for the investigation 
+of these various aspects during hardware design.  He holds a Ph.D from the Polytechnic University of Catalonia (UPC).
+</p><p>
+<b><a href="http://researcher.watson.ibm.com/researcher/view.php?person=us-pbose" rel="nofollow">Pradip Bose</a> </b>is the
+manager of <i>Efficient and Resilient Systems</i> at IBM T. J. Watson Research Center. He has over thirty-three years
+of experience at IBM, and was a member of the pioneering RISC super scalar project at IBM (a pre-cursor to the first RS/6000 system product). He holds a
+Ph.D from University of Illinois at Urbana-Champaign. 
+</p>
+                </div>
+                <div id="contact" class="col-md-4">
+                    <h4 class="section-title">Contact</h4>
+                    <ul class="list-arrow-right">
+
+<li><a href="mailto:info@wp3workshop.website">info@wp3workshop.website</a></li> 
+<li><a href="mailto:wp3@easychair.org">wp3@easychair.org</a></li> 
+
+<!-- <li><a href="http://researcher.watson.ibm.com/researcher/view.php?person=us-wellman">John-David Wellman</a> (IBM Research) - <a href="mailto:wellman@us.ibm.com">wellman@us.ibm.com</a></li> 
+<li>Robert Montoye (IBM Research)- <a href="mailto:montoye@us.ibm.com">montoye@us.ibm.com</a></li>
+<li><a href="http://researcher.watson.ibm.com/researcher/view.php?person=us-rbertra" rel="nofollow">Ramon Bertran</a> (IBM Research) - <a href="mailto:rbertra@us.ibm.com">rbertra@us.ibm.com</a></li>
+<li><a href="http://researcher.watson.ibm.com/researcher/view.php?person=us-pbose" rel="nofollow">Pradip Bose</a> (IBM Research) - <a href="mailto:pbose@us.ibm.com">pbose@us.ibm.com</a></li>
+--!>
+					</ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--
+    <section id="photos" class="section photos">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3 class="section-title">Photos</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <ul class="grid">
+                        
+                        <li class="grid-item grid-item-sm-6">
+                            <img alt="" class="img-responsive center-block" src="assets/images/photos/photos-1.jpg">
+                        </li>
+
+                        <li class="grid-item grid-item-sm-3">
+                            <img alt="" class="img-responsive center-block" src="assets/images/photos/photos-2.jpg">
+                        </li>
+
+                        <li class="grid-item grid-item-sm-3">
+                            <img alt="" class="img-responsive center-block" src="assets/images/photos/photos-3.jpg">
+                        </li>
+                    
+                        <li class="grid-item grid-item-sm-3">
+                            <img alt="" class="img-responsive center-block" src="assets/images/photos/photos-5.jpg">
+                        </li>
+
+                        <li class="grid-item grid-item-sm-3">
+                            <img alt="" class="img-responsive center-block" src="assets/images/photos/photos-6.jpg">
+                        </li>
+
+                        <li class="grid-item grid-item-sm-3">
+                            <img alt="" class="img-responsive center-block" src="assets/images/photos/photos-7.jpg">
+                        </li>
+
+                        <li class="grid-item grid-item-sm-3">
+                            <img alt="" class="img-responsive center-block" src="assets/images/photos/photos-8.jpg">
+                        </li>
+
+                        <li class="grid-item grid-item-sm-3">
+                            <img alt="" class="img-responsive center-block" src="assets/images/photos/photos-2.jpg">
+                        </li>
+
+                        <li class="grid-item grid-item-sm-3">
+                            <img alt="" class="img-responsive center-block" src="assets/images/photos/photos-3.jpg">
+                        </li>
+                    </ul>
+                </div>
+            </div>            
+        </div>
+    </section>
+    -->
+    <section id="links" class="section bg-image-2 facts ">
+        <div class="container">
+            <div class="row">
+				<div class="col-md-12">
+                    <h3 class="section-title">Interesting Links</h3>
+                </div>
+				<div class="col-md-3">
+                    <p>The <a href="http://newsletter.sigmicro.org/sigmicro-oral-history-transcripts/" rel="nofollow">AMC SIGMICRO Oral History Project</a> with transcripts and audio files.</p>
+                </div><div class="col-md-3">
+                    <p>The <a href="http://www.ieee.org/conferences_events/conferences/publishing/templates.html" rel="nofollow">IEEE Manuscript Templates for Conference Proceedings</a> for preparing paper submissions.</p>
+                </div><div class="col-md-3">
+                    <p>The <a href="http://www.computerhistory.org/" rel="nofollow">Computer History Museum</a>. 
+                        See the <a href="http://www.computerhistory.org/microprocessors/" rel="nofollow">Microprocessors 1971-1996 Online Exhibit</a> there, along with so much more.</p>
+                </div><div class="col-md-3">
+                    <p>The <a href="http://www.research.ibm.com/journal/" rel="nofollow">IBM Journal of Research and Development</a> and 
+                        <a href="http://domino.research.ibm.com/tchjr/journalindex.nsf/Home?OpenForm" rel="nofollow">IBM Technical Journals </a>.</p>
+                </div>
+
+
+        </div>
+    </section>
+
+
+    <section id="location" class="section location">
+        <div class="container">
+            <div class="row">
+			
+				<div id="registration" class="col-md-3">
+                    <h3 class="section-title">Registration</h3>
+
+                    <p>W3P will be held in conjunction with the <b><a href="http://hpca2017.org/" >23rd IEEE Symposium on High
+                            Performance Computer Architecture (HPCA)</a></b>. Refer to the main venue to continue with the
+                    registration process.</p>
+                    
+
+                </div>
+
+
+                <div class="col-sm-3">
+                    <h3 class="section-title">Event Location</h3>
+
+                     <address>
+			     
+                         <p>Room 415B<br>Hilton Austin<br>
+                         500 E 4th St<br>
+                     Austin, TX 78701</p>
+                     </address>
+
+                     <p><b><a href="http://hpca2017.org/" > Check main venue site for more information.</a></b></p>
+
+                </div>
+                <div class="col-sm-6">
+
+                    <iframe width="100%" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://www.openstreetmap.org/export/embed.html?bbox=-97.74021416902544%2C30.264235788909314%2C-97.7377036213875%2C30.265892180817808&amp;layer=mapnik" style="border: 1px solid black"></iframe><br/><small><a href="http://www.openstreetmap.org/#map=19/30.26506/-97.73896">View Larger Map</a></small>
+
+                </div>
+				            </div>
+        </div>
+    </section>
+
+
+    <footer class="site-footer facts">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="site-info">Share this event on your social networks</p>
+                </div>
+                <div class="col-md-4">
+                    <a href="https://twitter.com/home?status=Check%20out%20the%20Workshop%20on%20Pioneering%20Processor%20Paradigms%0Ahttps%3A//wp3workshop.website/"><i class="ion-social-twitter"></i>&nbsp; Twitter</a>
+                </div>
+                <div class="col-md-4">
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//wp3workshop.website/"><i class="ion-social-facebook"></i>&nbsp; Facebook</a>
+                </div>
+                <div class="col-md-4">
+                    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A//wp3workshop.website/&title=Workshop%20on%20Pioneering%20Processor%20Paradigms&summary=&source="><i class="ion-social-linkedin-outline"></i>&nbsp; LinkedIn</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- script -->
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="bower_components/smooth-scroll/dist/js/smooth-scroll.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
